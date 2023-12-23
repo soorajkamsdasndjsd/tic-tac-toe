@@ -121,3 +121,29 @@ void main ()
 	  g++;
 	}
     }
+	  for (l = 0; l < 3; l++)
+    {
+      i = 0;
+      if (s[i][l].ch == 'o' && s[i + 1][l].ch == s[i + 2][l].ch
+	  && s[i][l].ch == s[i + 1][l].ch)
+	{
+	  p++;
+	  printf ("the winner of game is o");
+	  g++;
+	}
+    }
+  if (s[0][0].ch == 'o' && s[1][1].ch == s[2][2].ch
+      && s[0][0].ch == s[1][1].ch)
+    {
+      p++;
+      printf ("the winner of game is o");
+      g++;
+
+    }
+  if (s[0][3].ch == 'o' && s[1][1].ch == s[2][0].ch
+      && s[3][0].ch == s[1][1].ch)
+    {
+      p++;
+      printf ("the winner of game is o");
+      g++;
+    }
