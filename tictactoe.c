@@ -91,4 +91,33 @@ void main ()
 	      printf ("the winner of game is x");
 	      g++;
 	    }
-	}   
+	}  
+	 if (s[0][0].ch == 'x' && s[1][1].ch == s[2][2].ch
+	  && s[0][0].ch == s[1][1].ch)
+	{
+	  p++;
+	  printf ("the winner of game is x");
+	  g++;
+
+	}
+      if (s[0][3].ch == 'x' && s[1][1].ch == s[2][0].ch
+	  && s[3][0].ch == s[1][1].ch)
+	{
+	  p++;
+	  printf ("the winner of game is x");
+	  g++;
+	}
+
+    
+
+  for (i = 0; i < 3; i++)
+    {
+      l = 0;
+      if (s[i][l].ch == 'o' && s[i][l + 1].ch == s[i][l + 2].ch
+	  && s[i][l].ch == s[i][l + 1].ch)
+	{
+	  p++;
+	  printf ("the winner of game is o");
+	  g++;
+	}
+    }
