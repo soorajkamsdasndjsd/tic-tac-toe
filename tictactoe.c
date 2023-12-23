@@ -147,3 +147,23 @@ void main ()
       printf ("the winner of game is o");
       g++;
     }
+
+  int count = 0;
+  for (j = 0; j < 3; j++)
+    {
+      for (n = 0; n < 3; n++)
+	{
+	  if (s[j][n].ch != '_')
+	    {
+	      count++;
+	      if (count == 9&&g==0)
+		{
+		  printf ("the game was a draw");
+		  p++;
+
+		}
+	    }
+	}
+      m++;
+    }
+}}
