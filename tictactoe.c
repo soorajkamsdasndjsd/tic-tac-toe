@@ -57,4 +57,38 @@ void main ()
 	    }
 
 	}
-    
+      else
+	{
+	  printf ("block already filled\n");
+	  m--;
+	}
+      }
+	else
+	{
+	    printf("you thought outside the box\n");
+	    m--;
+	}
+	
+    displaymatrix(s);
+      for (i = 0; i < 3; i++)
+	{
+	  l = 0;
+	  if (s[i][l].ch == 'x' && s[i][l + 1].ch == s[i][l + 2].ch
+	      && s[i][l].ch == s[i][l + 1].ch)
+	    {
+	      p++;
+	      printf ("the winner of game is x");
+	      g++;
+	    }
+	}
+      for (l = 0; l < 3; l++)
+	{
+	  i = 0;
+	  if (s[i][l].ch == 'x' && s[i + 1][l].ch == s[i + 2][l].ch
+	      && s[i][l].ch == s[i + 1][l].ch)
+	    {
+	      p++;
+	      printf ("the winner of game is x");
+	      g++;
+	    }
+	}   
