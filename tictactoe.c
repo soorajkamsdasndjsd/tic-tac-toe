@@ -26,3 +26,35 @@ void main ()
 
 	}
     }
+    printf("__________________________\n\n");
+    printf("\tTIC TAC TOE\n");
+    printf("__________________________\n");
+ displaymatrix(s);
+  while (p == 0)
+    {
+    if(m%2==0)
+        printf("Turn of x\n");
+    else
+        printf("Turn of o\n");
+
+      printf ("enter the row: ");
+      scanf ("%d", &r);
+      printf ("enter the coloumn: ");
+      scanf ("%d", &c);
+      if(r>=0&&r<3&&c>=0&&c<3)
+      {
+      if (s[r][c].ch == '_')
+	{
+	  if (m % 2 == 0)
+	    {
+	        
+	      s[r][c].ch = 'x';
+
+	    }
+	  else
+	    {
+	      s[r][c].ch = 'o';
+	    }
+
+	}
+    
